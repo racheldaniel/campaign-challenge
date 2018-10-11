@@ -116,8 +116,7 @@ function addIssue(issueName, statementString) {
   return newIssue
 }
 
-//function to update volunteer information CURRENTLY THIS IS CREATING A NEW KEY NAMED KEY
-
+//function to update volunteer information 
 function updateVol(name, key, value){
   for (let i = 0; i < elizabethSanger.volunteers.length; i++){
     if (elizabethSanger.volunteers[i].name == name.toLowerCase()) {
@@ -126,13 +125,3 @@ function updateVol(name, key, value){
   }
 }
 
-// Testing addIssue function
-
-addIssue("butts", "Liz likes butts")
-console.table(elizabethSanger.platforms)
-
-
-// Testing updateVol function
-
-updateVol("louise", "phone", "999-999-9999" )
-console.table(elizabethSanger.volunteers)
